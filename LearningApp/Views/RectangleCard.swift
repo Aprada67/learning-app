@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct RectangleCard: View {
+    
+    // Make color dinamic
+    var color = Color.white
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        RoundedRectangle(cornerRadius: 10)
+            // Make color dinamic
+            .foregroundStyle(color)
+            .shadow(radius: 5)
     }
 }
 
